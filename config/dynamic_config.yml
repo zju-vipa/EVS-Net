@@ -1,0 +1,22 @@
+#hyper-parameters
+
+num_class: 1
+backbone: resnet
+out_stride: 16
+sync_bn: True
+freeze_bn: True
+dump_folder: /disk
+
+#dataset hyper-parameters
+lambda_gp: 10
+train_list: train_data.txt
+val_list: val_data.txt
+crop_size: 128
+val_size: 128
+
+lr: 0.001
+epochs: 50000
+batch_size: 25
+grid_size: 8
+
+
